@@ -754,11 +754,15 @@ namespace AnchorSystem.Telas
             // 
             // btnCtrlMenu
             // 
+            this.btnCtrlMenu.FlatAppearance.BorderSize = 0;
+            this.btnCtrlMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnCtrlMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnCtrlMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCtrlMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnCtrlMenu.Image")));
             this.btnCtrlMenu.Location = new System.Drawing.Point(6, 2);
             this.btnCtrlMenu.Name = "btnCtrlMenu";
             this.btnCtrlMenu.Size = new System.Drawing.Size(40, 40);
             this.btnCtrlMenu.TabIndex = 4;
-            this.btnCtrlMenu.Text = "===";
             this.btnCtrlMenu.UseVisualStyleBackColor = true;
             this.btnCtrlMenu.Click += new System.EventHandler(this.btnCtrlMenu_Click);
             // 

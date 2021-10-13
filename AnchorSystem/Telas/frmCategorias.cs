@@ -17,7 +17,11 @@ namespace AnchorSystem.Telas
             InitializeComponent();
             CustomPanel();
         }
+        private void frmCategorias_Load(object sender, EventArgs e)
+        {
+            lblCatProd.Location = new Point((pnlCatProd.Width / 2) - (lblCatProd.Size.Width / 2), (pnlCatProd.Height / 2) - (lblCatProd.Size.Height / 2));
 
+        }
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Close();

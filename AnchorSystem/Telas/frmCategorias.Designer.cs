@@ -31,7 +31,7 @@ namespace AnchorSystem.Telas
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCategorias));
             this.btnFechar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCatProd = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -49,14 +49,14 @@ namespace AnchorSystem.Telas
             this.txtAddNome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlCatProd = new System.Windows.Forms.Panel();
             this.pnlControleProdutos = new System.Windows.Forms.Panel();
             this.btnCadastrarCategoria = new System.Windows.Forms.Button();
             this.btnLocalizarCategoria = new System.Windows.Forms.Button();
             this.pnlLocCategoria1 = new System.Windows.Forms.Panel();
             this.pnlCadastroCategoria = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.pnlCatProd.SuspendLayout();
             this.pnlControleProdutos.SuspendLayout();
             this.pnlLocCategoria1.SuspendLayout();
             this.pnlCadastroCategoria.SuspendLayout();
@@ -78,19 +78,19 @@ namespace AnchorSystem.Telas
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // label1
+            // lblCatProd
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblCatProd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(445, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 29);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Categorias de Produtos";
+            this.lblCatProd.AutoSize = true;
+            this.lblCatProd.BackColor = System.Drawing.Color.Transparent;
+            this.lblCatProd.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.lblCatProd.ForeColor = System.Drawing.Color.White;
+            this.lblCatProd.Location = new System.Drawing.Point(445, 5);
+            this.lblCatProd.Name = "lblCatProd";
+            this.lblCatProd.Size = new System.Drawing.Size(284, 29);
+            this.lblCatProd.TabIndex = 4;
+            this.lblCatProd.Text = "Categorias de Produtos";
             // 
             // dataGridView1
             // 
@@ -105,47 +105,65 @@ namespace AnchorSystem.Telas
             // 
             // btnEditar
             // 
-            this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Location = new System.Drawing.Point(381, 19);
+            this.btnEditar.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEditar.Location = new System.Drawing.Point(607, 148);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(65, 65);
+            this.btnEditar.Size = new System.Drawing.Size(116, 95);
             this.btnEditar.TabIndex = 6;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
             // btnExcluir
             // 
-            this.btnExcluir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExcluir.BackgroundImage")));
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.FlatAppearance.BorderSize = 0;
-            this.btnExcluir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnExcluir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Location = new System.Drawing.Point(464, 19);
+            this.btnExcluir.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExcluir.Location = new System.Drawing.Point(607, 266);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(65, 65);
+            this.btnExcluir.Size = new System.Drawing.Size(116, 95);
             this.btnExcluir.TabIndex = 5;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(310, 19);
+            this.btnBuscar.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.Location = new System.Drawing.Point(607, 42);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(65, 65);
+            this.btnBuscar.Size = new System.Drawing.Size(116, 95);
             this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // txtBuscarCodigo
@@ -153,7 +171,7 @@ namespace AnchorSystem.Telas
             this.txtBuscarCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarCodigo.Location = new System.Drawing.Point(100, 55);
             this.txtBuscarCodigo.Name = "txtBuscarCodigo";
-            this.txtBuscarCodigo.Size = new System.Drawing.Size(184, 29);
+            this.txtBuscarCodigo.Size = new System.Drawing.Size(272, 29);
             this.txtBuscarCodigo.TabIndex = 3;
             // 
             // txtBuscarNome
@@ -161,7 +179,7 @@ namespace AnchorSystem.Telas
             this.txtBuscarNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarNome.Location = new System.Drawing.Point(100, 19);
             this.txtBuscarNome.Name = "txtBuscarNome";
-            this.txtBuscarNome.Size = new System.Drawing.Size(184, 29);
+            this.txtBuscarNome.Size = new System.Drawing.Size(272, 29);
             this.txtBuscarNome.TabIndex = 2;
             // 
             // label3
@@ -189,7 +207,7 @@ namespace AnchorSystem.Telas
             // txtAddDescricao
             // 
             this.txtAddDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddDescricao.Location = new System.Drawing.Point(113, 78);
+            this.txtAddDescricao.Location = new System.Drawing.Point(120, 158);
             this.txtAddDescricao.Multiline = true;
             this.txtAddDescricao.Name = "txtAddDescricao";
             this.txtAddDescricao.Size = new System.Drawing.Size(355, 111);
@@ -197,48 +215,66 @@ namespace AnchorSystem.Telas
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(341, 229);
+            this.btnCancelar.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCancelar.Location = new System.Drawing.Point(551, 283);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(65, 65);
+            this.btnCancelar.Size = new System.Drawing.Size(116, 95);
             this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvar.BackgroundImage")));
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Location = new System.Drawing.Point(228, 229);
+            this.btnSalvar.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalvar.Location = new System.Drawing.Point(551, 158);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(65, 65);
+            this.btnSalvar.Size = new System.Drawing.Size(116, 95);
             this.btnSalvar.TabIndex = 24;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // btnNovo
             // 
-            this.btnNovo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNovo.BackgroundImage")));
             this.btnNovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.FlatAppearance.BorderSize = 0;
-            this.btnNovo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.btnNovo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnNovo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnNovo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovo.Location = new System.Drawing.Point(113, 229);
+            this.btnNovo.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.btnNovo.ForeColor = System.Drawing.Color.White;
+            this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
+            this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNovo.Location = new System.Drawing.Point(551, 26);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(65, 65);
+            this.btnNovo.Size = new System.Drawing.Size(116, 95);
             this.btnNovo.TabIndex = 23;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnNovo.UseVisualStyleBackColor = true;
             // 
             // label9
@@ -246,7 +282,7 @@ namespace AnchorSystem.Telas
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Bright", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(3, 78);
+            this.label9.Location = new System.Drawing.Point(10, 158);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 22);
             this.label9.TabIndex = 15;
@@ -255,7 +291,7 @@ namespace AnchorSystem.Telas
             // txtAddCodigo
             // 
             this.txtAddCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddCodigo.Location = new System.Drawing.Point(113, 43);
+            this.txtAddCodigo.Location = new System.Drawing.Point(120, 123);
             this.txtAddCodigo.Name = "txtAddCodigo";
             this.txtAddCodigo.Size = new System.Drawing.Size(355, 29);
             this.txtAddCodigo.TabIndex = 11;
@@ -263,7 +299,7 @@ namespace AnchorSystem.Telas
             // txtAddNome
             // 
             this.txtAddNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddNome.Location = new System.Drawing.Point(113, 8);
+            this.txtAddNome.Location = new System.Drawing.Point(120, 88);
             this.txtAddNome.Name = "txtAddNome";
             this.txtAddNome.Size = new System.Drawing.Size(355, 29);
             this.txtAddNome.TabIndex = 10;
@@ -273,7 +309,7 @@ namespace AnchorSystem.Telas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Bright", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 47);
+            this.label4.Location = new System.Drawing.Point(10, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 22);
             this.label4.TabIndex = 9;
@@ -284,31 +320,31 @@ namespace AnchorSystem.Telas
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Bright", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 19);
+            this.label5.Location = new System.Drawing.Point(10, 99);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 22);
             this.label5.TabIndex = 8;
             this.label5.Text = "Nome:";
             // 
-            // panel3
+            // pnlCatProd
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightCoral;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.btnFechar);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1143, 45);
-            this.panel3.TabIndex = 28;
+            this.pnlCatProd.BackColor = System.Drawing.Color.Transparent;
+            this.pnlCatProd.Controls.Add(this.lblCatProd);
+            this.pnlCatProd.Controls.Add(this.btnFechar);
+            this.pnlCatProd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlCatProd.Location = new System.Drawing.Point(0, 0);
+            this.pnlCatProd.Name = "pnlCatProd";
+            this.pnlCatProd.Size = new System.Drawing.Size(1143, 40);
+            this.pnlCatProd.TabIndex = 28;
             // 
             // pnlControleProdutos
             // 
             this.pnlControleProdutos.Controls.Add(this.btnCadastrarCategoria);
             this.pnlControleProdutos.Controls.Add(this.btnLocalizarCategoria);
             this.pnlControleProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlControleProdutos.Location = new System.Drawing.Point(0, 45);
+            this.pnlControleProdutos.Location = new System.Drawing.Point(0, 40);
             this.pnlControleProdutos.Name = "pnlControleProdutos";
-            this.pnlControleProdutos.Size = new System.Drawing.Size(1143, 96);
+            this.pnlControleProdutos.Size = new System.Drawing.Size(1143, 67);
             this.pnlControleProdutos.TabIndex = 29;
             // 
             // btnCadastrarCategoria
@@ -322,9 +358,9 @@ namespace AnchorSystem.Telas
             this.btnCadastrarCategoria.ForeColor = System.Drawing.Color.White;
             this.btnCadastrarCategoria.Location = new System.Drawing.Point(226, 10);
             this.btnCadastrarCategoria.Name = "btnCadastrarCategoria";
-            this.btnCadastrarCategoria.Size = new System.Drawing.Size(188, 73);
+            this.btnCadastrarCategoria.Size = new System.Drawing.Size(188, 45);
             this.btnCadastrarCategoria.TabIndex = 1;
-            this.btnCadastrarCategoria.Text = "Cadastrar Categoria";
+            this.btnCadastrarCategoria.Text = "Cadastrar";
             this.btnCadastrarCategoria.UseVisualStyleBackColor = false;
             this.btnCadastrarCategoria.Click += new System.EventHandler(this.btnCadastrarCategoria_Click);
             // 
@@ -339,9 +375,9 @@ namespace AnchorSystem.Telas
             this.btnLocalizarCategoria.ForeColor = System.Drawing.Color.White;
             this.btnLocalizarCategoria.Location = new System.Drawing.Point(14, 10);
             this.btnLocalizarCategoria.Name = "btnLocalizarCategoria";
-            this.btnLocalizarCategoria.Size = new System.Drawing.Size(188, 73);
+            this.btnLocalizarCategoria.Size = new System.Drawing.Size(188, 45);
             this.btnLocalizarCategoria.TabIndex = 0;
-            this.btnLocalizarCategoria.Text = "Localizar Categoria";
+            this.btnLocalizarCategoria.Text = "Localizar";
             this.btnLocalizarCategoria.UseVisualStyleBackColor = false;
             this.btnLocalizarCategoria.Click += new System.EventHandler(this.btnLocalizarCategoria_Click);
             // 
@@ -355,9 +391,9 @@ namespace AnchorSystem.Telas
             this.pnlLocCategoria1.Controls.Add(this.txtBuscarNome);
             this.pnlLocCategoria1.Controls.Add(this.btnExcluir);
             this.pnlLocCategoria1.Controls.Add(this.txtBuscarCodigo);
-            this.pnlLocCategoria1.Location = new System.Drawing.Point(0, 187);
+            this.pnlLocCategoria1.Location = new System.Drawing.Point(486, 113);
             this.pnlLocCategoria1.Name = "pnlLocCategoria1";
-            this.pnlLocCategoria1.Size = new System.Drawing.Size(560, 449);
+            this.pnlLocCategoria1.Size = new System.Drawing.Size(746, 449);
             this.pnlLocCategoria1.TabIndex = 30;
             this.pnlLocCategoria1.Visible = false;
             // 
@@ -373,9 +409,9 @@ namespace AnchorSystem.Telas
             this.pnlCadastroCategoria.Controls.Add(this.btnNovo);
             this.pnlCadastroCategoria.Controls.Add(this.label4);
             this.pnlCadastroCategoria.Controls.Add(this.label9);
-            this.pnlCadastroCategoria.Location = new System.Drawing.Point(590, 179);
+            this.pnlCadastroCategoria.Location = new System.Drawing.Point(47, 147);
             this.pnlCadastroCategoria.Name = "pnlCadastroCategoria";
-            this.pnlCadastroCategoria.Size = new System.Drawing.Size(508, 344);
+            this.pnlCadastroCategoria.Size = new System.Drawing.Size(534, 393);
             this.pnlCadastroCategoria.TabIndex = 31;
             this.pnlCadastroCategoria.Visible = false;
             // 
@@ -388,15 +424,16 @@ namespace AnchorSystem.Telas
             this.Controls.Add(this.pnlCadastroCategoria);
             this.Controls.Add(this.pnlLocCategoria1);
             this.Controls.Add(this.pnlControleProdutos);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pnlCatProd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCategorias";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCategorias";
+            this.Load += new System.EventHandler(this.frmCategorias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlCatProd.ResumeLayout(false);
+            this.pnlCatProd.PerformLayout();
             this.pnlControleProdutos.ResumeLayout(false);
             this.pnlLocCategoria1.ResumeLayout(false);
             this.pnlLocCategoria1.PerformLayout();
@@ -409,7 +446,7 @@ namespace AnchorSystem.Telas
         #endregion
 
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCatProd;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnBuscar;
@@ -427,7 +464,7 @@ namespace AnchorSystem.Telas
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtAddDescricao;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlCatProd;
         private System.Windows.Forms.Panel pnlControleProdutos;
         private System.Windows.Forms.Button btnCadastrarCategoria;
         private System.Windows.Forms.Button btnLocalizarCategoria;
