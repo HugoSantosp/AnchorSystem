@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace AnchorSystem.Telas
 {
-    public partial class frmFuncionarios : Form
+    public partial class frmUsuarios : Form
     {
-        public frmFuncionarios()
+        public frmUsuarios()
         {
             InitializeComponent();
             CustomPanel();
         }
+        //MÉTODO DE CARREGAMENTO DO FORMULARIO
 
+        private void frmUsuarios_Load(object sender, EventArgs e)
+        {
+            lblUsuarios.Location = new Point((pnlUsuarios.Width / 2) - (lblUsuarios.Size.Width / 2), (pnlUsuarios.Height / 2) - (lblUsuarios.Size.Height / 2));
+        }
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Close();
@@ -76,5 +81,7 @@ namespace AnchorSystem.Telas
         {
             MostrarSubMenu(pnlCdastrarFunc);
         }
+
+      
     }
 }

@@ -409,7 +409,7 @@ namespace AnchorSystem.Telas
             this.pnlCadastroCategoria.Controls.Add(this.btnNovo);
             this.pnlCadastroCategoria.Controls.Add(this.label4);
             this.pnlCadastroCategoria.Controls.Add(this.label9);
-            this.pnlCadastroCategoria.Location = new System.Drawing.Point(47, 147);
+            this.pnlCadastroCategoria.Location = new System.Drawing.Point(12, 132);
             this.pnlCadastroCategoria.Name = "pnlCadastroCategoria";
             this.pnlCadastroCategoria.Size = new System.Drawing.Size(534, 393);
             this.pnlCadastroCategoria.TabIndex = 31;

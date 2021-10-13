@@ -18,6 +18,12 @@ namespace AnchorSystem.Telas
             CustomPanel();
         }
 
+        // MÉTODO DE CARREGAMENTO DO FORMULÁRIO
+        private void frmLojas_Load(object sender, EventArgs e)
+        {
+           lblLojas.Location = new Point((pnlLojas.Width / 2) - (lblLojas.Size.Width / 2), (pnlLojas.Height / 2) - (lblLojas.Size.Height / 2));
+        }
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Close();
@@ -127,6 +133,6 @@ namespace AnchorSystem.Telas
             MostrarSubMenu(pnlCadasLoja);
         }
 
-       
+      
     }
 }

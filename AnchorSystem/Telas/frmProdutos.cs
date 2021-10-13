@@ -22,7 +22,6 @@ namespace AnchorSystem.Telas
         // MÉTODO DE CARREGAMENTO DE FORMULÁRIO
         private void frmProdutos_Load(object sender, EventArgs e)
         {
-           
 
             lblProdutos.Location = new Point((pnlProdutos.Width /2) - (lblProdutos.Size.Width / 2), (pnlProdutos.Height / 2) - (lblProdutos.Size.Height / 2));
         }

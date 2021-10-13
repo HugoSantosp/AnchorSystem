@@ -476,7 +476,7 @@ namespace AnchorSystem.Telas
             this.pnlControleProdutos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlControleProdutos.Location = new System.Drawing.Point(0, 40);
             this.pnlControleProdutos.Name = "pnlControleProdutos";
-            this.pnlControleProdutos.Size = new System.Drawing.Size(1386, 58);
+            this.pnlControleProdutos.Size = new System.Drawing.Size(1386, 60);
             this.pnlControleProdutos.TabIndex = 26;
             // 
             // btnCadastrarProduto

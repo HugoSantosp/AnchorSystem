@@ -26,6 +26,7 @@ namespace AnchorSystem.Telas
         private void frmMenuPrincipal_Load(object sender, EventArgs e)
         {
             AbrirBoasvindas();
+            OcultarpnLateral();
         }
         
         // MÉTODO DE CONFIGURAÇÃO PARA 
@@ -106,30 +107,42 @@ namespace AnchorSystem.Telas
 
 
 
-        //MÉTODO DE ANIMAÇÃO DO MENU
+        //MÉTODO DE ANIMAÇÃO DO MENU PAINEL LATERAL
+
+        private void ExibirpnLateral()
+        {
+            pnlLateral.Width = 250;
+            btnMenuProdutos.Enabled = true; btnMenuProdutos.Text = "Produtos";
+            btnMenuVendas.Enabled = true; btnMenuVendas.Text = "Vendas";
+            btnMenuCompras.Enabled = true; btnMenuCompras.Text = "Compras";
+            btnMenuConsultas.Enabled = true; btnMenuConsultas.Text = "Consultas";
+            btnMenuConfiguracoes.Enabled = true; btnMenuConfiguracoes.Text = "Configurações";
+            btnMenuFerramentas.Enabled = true; btnMenuFerramentas.Text = "Ferramentas";
+        }
+
+        private void OcultarpnLateral()
+        {
+            pnlLateral.Width = 70;
+            OcultarSubmenu();
+            btnMenuProdutos.Enabled = false; btnMenuProdutos.Text = "";
+            btnMenuVendas.Enabled = false; btnMenuVendas.Text = "";
+            btnMenuCompras.Enabled = false; btnMenuCompras.Text = "";
+            btnMenuConsultas.Enabled = false; btnMenuConsultas.Text = "";
+            btnMenuConfiguracoes.Enabled = false; btnMenuConfiguracoes.Text = "";
+            btnMenuFerramentas.Enabled = false; btnMenuFerramentas.Text = "";
+        }
+
         private void btnCtrlMenu_Click(object sender, EventArgs e)
         {
-            if (pnlLateral.Width == 250)
+            if (pnlLateral.Width ==70)
             {
-                pnlLateral.Width = 70;
-                btnMenuProdutos.Enabled = false; btnMenuProdutos.Text = "";
-                btnMenuVendas.Enabled = false; btnMenuVendas.Text = "";
-                btnMenuCompras.Enabled = false; btnMenuCompras.Text = "";
-                btnMenuConsultas.Enabled = false; btnMenuConsultas.Text = "";
-                btnMenuConfiguracoes.Enabled = false; btnMenuConfiguracoes.Text = "";
-                btnMenuFerramentas.Enabled = false; btnMenuFerramentas.Text = "";
 
+                ExibirpnLateral();
 
             }
             else
             {
-                pnlLateral.Width = 250;
-                btnMenuProdutos.Enabled = true; btnMenuProdutos.Text = "Produtos";
-                btnMenuVendas.Enabled = true; btnMenuVendas.Text = "Vendas";
-                btnMenuCompras.Enabled = true; btnMenuCompras.Text = "Compras";
-                btnMenuConsultas.Enabled = true; btnMenuConsultas.Text = "Consultas";
-                btnMenuConfiguracoes.Enabled = true; btnMenuConfiguracoes.Text = "Configurações";
-                btnMenuFerramentas.Enabled = true; btnMenuFerramentas.Text = "Ferramentas";
+                OcultarpnLateral();
             }
         }
 
@@ -200,7 +213,7 @@ namespace AnchorSystem.Telas
 
         private void btnSubFuncionarios_Click(object sender, EventArgs e)
         {
-            Exibirform(new frmFuncionarios());
+            Exibirform(new frmUsuarios());
         }
 
         private void btnSubLojas_Click(object sender, EventArgs e)
@@ -213,6 +226,9 @@ namespace AnchorSystem.Telas
             AbrirBoasvindas();
         }
 
-
+        private void btnSubVendasData_Click(object sender, EventArgs e)
+        {
+            Exibirform(new frmConsultas());
+        }
     }
 }

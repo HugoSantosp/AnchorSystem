@@ -44,7 +44,6 @@ namespace AnchorSystem.Telas
             this.btnMenuFerramentas = new System.Windows.Forms.Button();
             this.pnlConsultas = new System.Windows.Forms.Panel();
             this.btnSubEstoquue = new System.Windows.Forms.Button();
-            this.btnSubComprasData = new System.Windows.Forms.Button();
             this.btnSubVendasData = new System.Windows.Forms.Button();
             this.btnMenuConsultas = new System.Windows.Forms.Button();
             this.pnlCompras = new System.Windows.Forms.Panel();
@@ -148,7 +147,7 @@ namespace AnchorSystem.Telas
             this.btnSubFuncoes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubFuncoes.FlatAppearance.BorderSize = 0;
             this.btnSubFuncoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubFuncoes.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubFuncoes.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubFuncoes.ForeColor = System.Drawing.Color.White;
             this.btnSubFuncoes.Location = new System.Drawing.Point(0, 70);
             this.btnSubFuncoes.Name = "btnSubFuncoes";
@@ -164,7 +163,7 @@ namespace AnchorSystem.Telas
             this.btnSubLojas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubLojas.FlatAppearance.BorderSize = 0;
             this.btnSubLojas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubLojas.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubLojas.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubLojas.ForeColor = System.Drawing.Color.White;
             this.btnSubLojas.Location = new System.Drawing.Point(0, 35);
             this.btnSubLojas.Name = "btnSubLojas";
@@ -181,13 +180,13 @@ namespace AnchorSystem.Telas
             this.btnSubFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubFuncionarios.FlatAppearance.BorderSize = 0;
             this.btnSubFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubFuncionarios.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubFuncionarios.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubFuncionarios.ForeColor = System.Drawing.Color.White;
             this.btnSubFuncionarios.Location = new System.Drawing.Point(0, 0);
             this.btnSubFuncionarios.Name = "btnSubFuncionarios";
             this.btnSubFuncionarios.Size = new System.Drawing.Size(233, 35);
             this.btnSubFuncionarios.TabIndex = 8;
-            this.btnSubFuncionarios.Text = "Funcionários";
+            this.btnSubFuncionarios.Text = "Usuários";
             this.btnSubFuncionarios.UseVisualStyleBackColor = false;
             this.btnSubFuncionarios.Click += new System.EventHandler(this.btnSubFuncionarios_Click);
             // 
@@ -229,7 +228,7 @@ namespace AnchorSystem.Telas
             this.button13.Dock = System.Windows.Forms.DockStyle.Top;
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.button13.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(0, 35);
             this.button13.Name = "button13";
@@ -245,7 +244,7 @@ namespace AnchorSystem.Telas
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.button14.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(0, 0);
             this.button14.Name = "button14";
@@ -278,7 +277,6 @@ namespace AnchorSystem.Telas
             // pnlConsultas
             // 
             this.pnlConsultas.Controls.Add(this.btnSubEstoquue);
-            this.pnlConsultas.Controls.Add(this.btnSubComprasData);
             this.pnlConsultas.Controls.Add(this.btnSubVendasData);
             this.pnlConsultas.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlConsultas.Location = new System.Drawing.Point(0, 487);
@@ -293,30 +291,14 @@ namespace AnchorSystem.Telas
             this.btnSubEstoquue.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubEstoquue.FlatAppearance.BorderSize = 0;
             this.btnSubEstoquue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubEstoquue.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubEstoquue.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubEstoquue.ForeColor = System.Drawing.Color.White;
-            this.btnSubEstoquue.Location = new System.Drawing.Point(0, 70);
+            this.btnSubEstoquue.Location = new System.Drawing.Point(0, 35);
             this.btnSubEstoquue.Name = "btnSubEstoquue";
             this.btnSubEstoquue.Size = new System.Drawing.Size(233, 35);
             this.btnSubEstoquue.TabIndex = 10;
-            this.btnSubEstoquue.Text = "Produtos Em Estoque";
+            this.btnSubEstoquue.Text = "Estoque";
             this.btnSubEstoquue.UseVisualStyleBackColor = false;
-            // 
-            // btnSubComprasData
-            // 
-            this.btnSubComprasData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.btnSubComprasData.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSubComprasData.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubComprasData.FlatAppearance.BorderSize = 0;
-            this.btnSubComprasData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubComprasData.Font = new System.Drawing.Font("Lucida Bright", 10F);
-            this.btnSubComprasData.ForeColor = System.Drawing.Color.White;
-            this.btnSubComprasData.Location = new System.Drawing.Point(0, 35);
-            this.btnSubComprasData.Name = "btnSubComprasData";
-            this.btnSubComprasData.Size = new System.Drawing.Size(233, 35);
-            this.btnSubComprasData.TabIndex = 9;
-            this.btnSubComprasData.Text = "Compras Por Datas";
-            this.btnSubComprasData.UseVisualStyleBackColor = false;
             // 
             // btnSubVendasData
             // 
@@ -325,14 +307,15 @@ namespace AnchorSystem.Telas
             this.btnSubVendasData.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubVendasData.FlatAppearance.BorderSize = 0;
             this.btnSubVendasData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubVendasData.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubVendasData.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubVendasData.ForeColor = System.Drawing.Color.White;
             this.btnSubVendasData.Location = new System.Drawing.Point(0, 0);
             this.btnSubVendasData.Name = "btnSubVendasData";
             this.btnSubVendasData.Size = new System.Drawing.Size(233, 35);
             this.btnSubVendasData.TabIndex = 8;
-            this.btnSubVendasData.Text = "Vendas Por Datas";
+            this.btnSubVendasData.Text = "Consultar Vendas ";
             this.btnSubVendasData.UseVisualStyleBackColor = false;
+            this.btnSubVendasData.Click += new System.EventHandler(this.btnSubVendasData_Click);
             // 
             // btnMenuConsultas
             // 
@@ -372,7 +355,7 @@ namespace AnchorSystem.Telas
             this.btnSubFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubFornecedores.FlatAppearance.BorderSize = 0;
             this.btnSubFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubFornecedores.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubFornecedores.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubFornecedores.ForeColor = System.Drawing.Color.White;
             this.btnSubFornecedores.Location = new System.Drawing.Point(0, 23);
             this.btnSubFornecedores.Name = "btnSubFornecedores";
@@ -388,7 +371,7 @@ namespace AnchorSystem.Telas
             this.btnSubEntradas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubEntradas.FlatAppearance.BorderSize = 0;
             this.btnSubEntradas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubEntradas.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubEntradas.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubEntradas.ForeColor = System.Drawing.Color.White;
             this.btnSubEntradas.Location = new System.Drawing.Point(0, 0);
             this.btnSubEntradas.Name = "btnSubEntradas";
@@ -435,7 +418,7 @@ namespace AnchorSystem.Telas
             this.btnSubClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubClientes.FlatAppearance.BorderSize = 0;
             this.btnSubClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubClientes.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubClientes.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubClientes.ForeColor = System.Drawing.Color.White;
             this.btnSubClientes.Location = new System.Drawing.Point(0, 35);
             this.btnSubClientes.Name = "btnSubClientes";
@@ -452,7 +435,7 @@ namespace AnchorSystem.Telas
             this.btnSubVendas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubVendas.FlatAppearance.BorderSize = 0;
             this.btnSubVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubVendas.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubVendas.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubVendas.ForeColor = System.Drawing.Color.White;
             this.btnSubVendas.Location = new System.Drawing.Point(0, 0);
             this.btnSubVendas.Name = "btnSubVendas";
@@ -500,7 +483,7 @@ namespace AnchorSystem.Telas
             this.btnSubCategorias.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubCategorias.FlatAppearance.BorderSize = 0;
             this.btnSubCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubCategorias.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubCategorias.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubCategorias.ForeColor = System.Drawing.Color.White;
             this.btnSubCategorias.Location = new System.Drawing.Point(0, 35);
             this.btnSubCategorias.Name = "btnSubCategorias";
@@ -517,7 +500,7 @@ namespace AnchorSystem.Telas
             this.btnSubProdutos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubProdutos.FlatAppearance.BorderSize = 0;
             this.btnSubProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubProdutos.Font = new System.Drawing.Font("Lucida Bright", 10F);
+            this.btnSubProdutos.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnSubProdutos.ForeColor = System.Drawing.Color.White;
             this.btnSubProdutos.Location = new System.Drawing.Point(0, 0);
             this.btnSubProdutos.Name = "btnSubProdutos";
@@ -850,7 +833,6 @@ namespace AnchorSystem.Telas
         private System.Windows.Forms.Button btnMenuFerramentas;
         private System.Windows.Forms.Panel pnlConsultas;
         private System.Windows.Forms.Button btnSubEstoquue;
-        private System.Windows.Forms.Button btnSubComprasData;
         private System.Windows.Forms.Button btnSubVendasData;
         private System.Windows.Forms.Button btnMenuConsultas;
         private System.Windows.Forms.Panel pnlCompras;

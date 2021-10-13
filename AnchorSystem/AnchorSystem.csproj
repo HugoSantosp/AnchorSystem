@@ -79,11 +79,11 @@
     <Compile Include="Telas\frmConsultas.Designer.cs">
       <DependentUpon>frmConsultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\frmFuncionarios.cs">
+    <Compile Include="Telas\frmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\frmFuncionarios.Designer.cs">
-      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    <Compile Include="Telas\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\frmLojas.cs">
       <SubType>Form</SubType>
@@ -121,11 +121,14 @@
     <EmbeddedResource Include="Telas\frmCategorias.resx">
       <DependentUpon>frmCategorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmConsultas.resx">
       <DependentUpon>frmConsultas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\frmFuncionarios.resx">
-      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmLojas.resx">
       <DependentUpon>frmLojas.cs</DependentUpon>
