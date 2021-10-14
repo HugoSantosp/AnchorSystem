@@ -25,7 +25,9 @@ namespace AnchorSystem.Telas
         //MÉTODO PARA CARREGAR O FORM DO MENU PRINCIPAL
         private void frmMenuPrincipal_Load(object sender, EventArgs e)
         {
-            AbrirBoasvindas();
+            // AbrirBoasvindas();
+            lblTitulo.Visible = false;
+            lblTitulo.Location = new Point((pnlSuperior.Width/2)-(lblTitulo.Width/2),(pnlSuperior.Height/2)-(lblTitulo.Height/2));
             OcultarpnLateral();
         }
         
@@ -45,8 +47,10 @@ namespace AnchorSystem.Telas
             frm.Dock = DockStyle.Fill;
             this.pnlCentral.Controls.Add(frm);
             this.pnlCentral.Tag = frm;
+            lblTitulo.Visible = true;
+            lblTitulo.Text = frm.Text;
             frm.Show();
-
+            
         }
 
         //Formulario de boas Vindas
@@ -81,6 +85,7 @@ namespace AnchorSystem.Telas
             pnlFerramentas.Visible = false;
 
 
+
         }   
 
         private void OcultarSubmenu()
@@ -104,6 +109,13 @@ namespace AnchorSystem.Telas
         }
 
 
+        // TORNAR O RELÓGIO INVISIVEL QUANDO UM FORMULARIO FILHO ABRE
+
+        private void Relogio()
+        {
+            lblHora.Visible = false;
+            lblData.Visible = false;
+        }
 
 
 
@@ -118,11 +130,13 @@ namespace AnchorSystem.Telas
             btnMenuConsultas.Enabled = true; btnMenuConsultas.Text = "Consultas";
             btnMenuConfiguracoes.Enabled = true; btnMenuConfiguracoes.Text = "Configurações";
             btnMenuFerramentas.Enabled = true; btnMenuFerramentas.Text = "Ferramentas";
+
+            
         }
 
         private void OcultarpnLateral()
         {
-            pnlLateral.Width = 70;
+            pnlLateral.Width = 75;
             OcultarSubmenu();
             btnMenuProdutos.Enabled = false; btnMenuProdutos.Text = "";
             btnMenuVendas.Enabled = false; btnMenuVendas.Text = "";
@@ -130,11 +144,13 @@ namespace AnchorSystem.Telas
             btnMenuConsultas.Enabled = false; btnMenuConsultas.Text = "";
             btnMenuConfiguracoes.Enabled = false; btnMenuConfiguracoes.Text = "";
             btnMenuFerramentas.Enabled = false; btnMenuFerramentas.Text = "";
+
+          
         }
 
         private void btnCtrlMenu_Click(object sender, EventArgs e)
         {
-            if (pnlLateral.Width ==70)
+            if (pnlLateral.Width ==75)
             {
 
                 ExibirpnLateral();
@@ -209,11 +225,14 @@ namespace AnchorSystem.Telas
         private void btnSubClientes_Click(object sender, EventArgs e)
         {
             Exibirform(new frmClientes());
+            
         }
 
         private void btnSubFuncionarios_Click(object sender, EventArgs e)
         {
             Exibirform(new frmUsuarios());
+            OcultarpnLateral();
+            Relogio();
         }
 
         private void btnSubLojas_Click(object sender, EventArgs e)

@@ -62,7 +62,6 @@ namespace AnchorSystem.Telas
             this.btnExit = new System.Windows.Forms.Button();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@ namespace AnchorSystem.Telas
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnCtrlMenu = new System.Windows.Forms.Button();
             this.pnlSuperior = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlCentral = new System.Windows.Forms.Panel();
             this.pnlLateral.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,11 +87,11 @@ namespace AnchorSystem.Telas
             this.pnlVendas.SuspendLayout();
             this.pnlProdutos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlSuperior.SuspendLayout();
+            this.pnlCentral.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLateral
@@ -109,8 +109,9 @@ namespace AnchorSystem.Telas
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(16)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.pnlConfiguracoes);
+            this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.btnMenuConfiguracoes);
             this.panel2.Controls.Add(this.pnlFerramentas);
             this.panel2.Controls.Add(this.btnMenuFerramentas);
@@ -135,14 +136,14 @@ namespace AnchorSystem.Telas
             this.pnlConfiguracoes.Controls.Add(this.btnSubLojas);
             this.pnlConfiguracoes.Controls.Add(this.btnSubFuncionarios);
             this.pnlConfiguracoes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlConfiguracoes.Location = new System.Drawing.Point(0, 752);
+            this.pnlConfiguracoes.Location = new System.Drawing.Point(0, 650);
             this.pnlConfiguracoes.Name = "pnlConfiguracoes";
-            this.pnlConfiguracoes.Size = new System.Drawing.Size(233, 104);
+            this.pnlConfiguracoes.Size = new System.Drawing.Size(250, 104);
             this.pnlConfiguracoes.TabIndex = 17;
             // 
             // btnSubFuncoes
             // 
-            this.btnSubFuncoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubFuncoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubFuncoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubFuncoes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubFuncoes.FlatAppearance.BorderSize = 0;
@@ -151,14 +152,14 @@ namespace AnchorSystem.Telas
             this.btnSubFuncoes.ForeColor = System.Drawing.Color.White;
             this.btnSubFuncoes.Location = new System.Drawing.Point(0, 70);
             this.btnSubFuncoes.Name = "btnSubFuncoes";
-            this.btnSubFuncoes.Size = new System.Drawing.Size(233, 35);
+            this.btnSubFuncoes.Size = new System.Drawing.Size(250, 35);
             this.btnSubFuncoes.TabIndex = 10;
             this.btnSubFuncoes.Text = "Funções";
             this.btnSubFuncoes.UseVisualStyleBackColor = false;
             // 
             // btnSubLojas
             // 
-            this.btnSubLojas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubLojas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubLojas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubLojas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubLojas.FlatAppearance.BorderSize = 0;
@@ -167,7 +168,7 @@ namespace AnchorSystem.Telas
             this.btnSubLojas.ForeColor = System.Drawing.Color.White;
             this.btnSubLojas.Location = new System.Drawing.Point(0, 35);
             this.btnSubLojas.Name = "btnSubLojas";
-            this.btnSubLojas.Size = new System.Drawing.Size(233, 35);
+            this.btnSubLojas.Size = new System.Drawing.Size(250, 35);
             this.btnSubLojas.TabIndex = 9;
             this.btnSubLojas.Text = "Lojas";
             this.btnSubLojas.UseVisualStyleBackColor = false;
@@ -175,7 +176,7 @@ namespace AnchorSystem.Telas
             // 
             // btnSubFuncionarios
             // 
-            this.btnSubFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubFuncionarios.FlatAppearance.BorderSize = 0;
@@ -184,7 +185,7 @@ namespace AnchorSystem.Telas
             this.btnSubFuncionarios.ForeColor = System.Drawing.Color.White;
             this.btnSubFuncionarios.Location = new System.Drawing.Point(0, 0);
             this.btnSubFuncionarios.Name = "btnSubFuncionarios";
-            this.btnSubFuncionarios.Size = new System.Drawing.Size(233, 35);
+            this.btnSubFuncionarios.Size = new System.Drawing.Size(250, 35);
             this.btnSubFuncionarios.TabIndex = 8;
             this.btnSubFuncionarios.Text = "Usuários";
             this.btnSubFuncionarios.UseVisualStyleBackColor = false;
@@ -197,15 +198,16 @@ namespace AnchorSystem.Telas
             this.btnMenuConfiguracoes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuConfiguracoes.FlatAppearance.BorderSize = 0;
             this.btnMenuConfiguracoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnMenuConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnMenuConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuConfiguracoes.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnMenuConfiguracoes.ForeColor = System.Drawing.Color.White;
             this.btnMenuConfiguracoes.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuConfiguracoes.Image")));
             this.btnMenuConfiguracoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuConfiguracoes.Location = new System.Drawing.Point(0, 707);
+            this.btnMenuConfiguracoes.Location = new System.Drawing.Point(0, 605);
             this.btnMenuConfiguracoes.Name = "btnMenuConfiguracoes";
-            this.btnMenuConfiguracoes.Size = new System.Drawing.Size(233, 45);
+            this.btnMenuConfiguracoes.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnMenuConfiguracoes.Size = new System.Drawing.Size(250, 45);
             this.btnMenuConfiguracoes.TabIndex = 16;
             this.btnMenuConfiguracoes.Text = "Configurações";
             this.btnMenuConfiguracoes.UseVisualStyleBackColor = false;
@@ -216,14 +218,14 @@ namespace AnchorSystem.Telas
             this.pnlFerramentas.Controls.Add(this.button13);
             this.pnlFerramentas.Controls.Add(this.button14);
             this.pnlFerramentas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlFerramentas.Location = new System.Drawing.Point(0, 638);
+            this.pnlFerramentas.Location = new System.Drawing.Point(0, 536);
             this.pnlFerramentas.Name = "pnlFerramentas";
-            this.pnlFerramentas.Size = new System.Drawing.Size(233, 69);
+            this.pnlFerramentas.Size = new System.Drawing.Size(250, 69);
             this.pnlFerramentas.TabIndex = 15;
             // 
             // button13
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.Dock = System.Windows.Forms.DockStyle.Top;
             this.button13.FlatAppearance.BorderSize = 0;
@@ -232,14 +234,14 @@ namespace AnchorSystem.Telas
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(0, 35);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(233, 35);
+            this.button13.Size = new System.Drawing.Size(250, 35);
             this.button13.TabIndex = 9;
             this.button13.Text = "Relatório";
             this.button13.UseVisualStyleBackColor = false;
             // 
             // button14
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
             this.button14.FlatAppearance.BorderSize = 0;
@@ -248,7 +250,7 @@ namespace AnchorSystem.Telas
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(0, 0);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(233, 35);
+            this.button14.Size = new System.Drawing.Size(250, 35);
             this.button14.TabIndex = 8;
             this.button14.Text = "Backup";
             this.button14.UseVisualStyleBackColor = false;
@@ -260,15 +262,16 @@ namespace AnchorSystem.Telas
             this.btnMenuFerramentas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuFerramentas.FlatAppearance.BorderSize = 0;
             this.btnMenuFerramentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuFerramentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnMenuFerramentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnMenuFerramentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuFerramentas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnMenuFerramentas.ForeColor = System.Drawing.Color.White;
             this.btnMenuFerramentas.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuFerramentas.Image")));
             this.btnMenuFerramentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuFerramentas.Location = new System.Drawing.Point(0, 593);
+            this.btnMenuFerramentas.Location = new System.Drawing.Point(0, 491);
             this.btnMenuFerramentas.Name = "btnMenuFerramentas";
-            this.btnMenuFerramentas.Size = new System.Drawing.Size(233, 45);
+            this.btnMenuFerramentas.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnMenuFerramentas.Size = new System.Drawing.Size(250, 45);
             this.btnMenuFerramentas.TabIndex = 14;
             this.btnMenuFerramentas.Text = "Ferramentas";
             this.btnMenuFerramentas.UseVisualStyleBackColor = false;
@@ -279,14 +282,14 @@ namespace AnchorSystem.Telas
             this.pnlConsultas.Controls.Add(this.btnSubEstoquue);
             this.pnlConsultas.Controls.Add(this.btnSubVendasData);
             this.pnlConsultas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlConsultas.Location = new System.Drawing.Point(0, 487);
+            this.pnlConsultas.Location = new System.Drawing.Point(0, 418);
             this.pnlConsultas.Name = "pnlConsultas";
-            this.pnlConsultas.Size = new System.Drawing.Size(233, 106);
+            this.pnlConsultas.Size = new System.Drawing.Size(250, 73);
             this.pnlConsultas.TabIndex = 13;
             // 
             // btnSubEstoquue
             // 
-            this.btnSubEstoquue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubEstoquue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubEstoquue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubEstoquue.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubEstoquue.FlatAppearance.BorderSize = 0;
@@ -295,14 +298,14 @@ namespace AnchorSystem.Telas
             this.btnSubEstoquue.ForeColor = System.Drawing.Color.White;
             this.btnSubEstoquue.Location = new System.Drawing.Point(0, 35);
             this.btnSubEstoquue.Name = "btnSubEstoquue";
-            this.btnSubEstoquue.Size = new System.Drawing.Size(233, 35);
+            this.btnSubEstoquue.Size = new System.Drawing.Size(250, 35);
             this.btnSubEstoquue.TabIndex = 10;
             this.btnSubEstoquue.Text = "Estoque";
             this.btnSubEstoquue.UseVisualStyleBackColor = false;
             // 
             // btnSubVendasData
             // 
-            this.btnSubVendasData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubVendasData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubVendasData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubVendasData.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubVendasData.FlatAppearance.BorderSize = 0;
@@ -311,7 +314,7 @@ namespace AnchorSystem.Telas
             this.btnSubVendasData.ForeColor = System.Drawing.Color.White;
             this.btnSubVendasData.Location = new System.Drawing.Point(0, 0);
             this.btnSubVendasData.Name = "btnSubVendasData";
-            this.btnSubVendasData.Size = new System.Drawing.Size(233, 35);
+            this.btnSubVendasData.Size = new System.Drawing.Size(250, 35);
             this.btnSubVendasData.TabIndex = 8;
             this.btnSubVendasData.Text = "Consultar Vendas ";
             this.btnSubVendasData.UseVisualStyleBackColor = false;
@@ -324,15 +327,16 @@ namespace AnchorSystem.Telas
             this.btnMenuConsultas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuConsultas.FlatAppearance.BorderSize = 0;
             this.btnMenuConsultas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuConsultas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnMenuConsultas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnMenuConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuConsultas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnMenuConsultas.ForeColor = System.Drawing.Color.White;
             this.btnMenuConsultas.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuConsultas.Image")));
             this.btnMenuConsultas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuConsultas.Location = new System.Drawing.Point(0, 442);
+            this.btnMenuConsultas.Location = new System.Drawing.Point(0, 373);
             this.btnMenuConsultas.Name = "btnMenuConsultas";
-            this.btnMenuConsultas.Size = new System.Drawing.Size(233, 45);
+            this.btnMenuConsultas.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnMenuConsultas.Size = new System.Drawing.Size(250, 45);
             this.btnMenuConsultas.TabIndex = 12;
             this.btnMenuConsultas.Text = "Consultas";
             this.btnMenuConsultas.UseVisualStyleBackColor = false;
@@ -343,14 +347,14 @@ namespace AnchorSystem.Telas
             this.pnlCompras.Controls.Add(this.btnSubFornecedores);
             this.pnlCompras.Controls.Add(this.btnSubEntradas);
             this.pnlCompras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCompras.Location = new System.Drawing.Point(0, 391);
+            this.pnlCompras.Location = new System.Drawing.Point(0, 322);
             this.pnlCompras.Name = "pnlCompras";
-            this.pnlCompras.Size = new System.Drawing.Size(233, 51);
+            this.pnlCompras.Size = new System.Drawing.Size(250, 51);
             this.pnlCompras.TabIndex = 11;
             // 
             // btnSubFornecedores
             // 
-            this.btnSubFornecedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubFornecedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubFornecedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubFornecedores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubFornecedores.FlatAppearance.BorderSize = 0;
@@ -359,14 +363,14 @@ namespace AnchorSystem.Telas
             this.btnSubFornecedores.ForeColor = System.Drawing.Color.White;
             this.btnSubFornecedores.Location = new System.Drawing.Point(0, 23);
             this.btnSubFornecedores.Name = "btnSubFornecedores";
-            this.btnSubFornecedores.Size = new System.Drawing.Size(233, 23);
+            this.btnSubFornecedores.Size = new System.Drawing.Size(250, 23);
             this.btnSubFornecedores.TabIndex = 9;
             this.btnSubFornecedores.Text = "Fornecedores";
             this.btnSubFornecedores.UseVisualStyleBackColor = false;
             // 
             // btnSubEntradas
             // 
-            this.btnSubEntradas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubEntradas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubEntradas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubEntradas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubEntradas.FlatAppearance.BorderSize = 0;
@@ -375,7 +379,7 @@ namespace AnchorSystem.Telas
             this.btnSubEntradas.ForeColor = System.Drawing.Color.White;
             this.btnSubEntradas.Location = new System.Drawing.Point(0, 0);
             this.btnSubEntradas.Name = "btnSubEntradas";
-            this.btnSubEntradas.Size = new System.Drawing.Size(233, 23);
+            this.btnSubEntradas.Size = new System.Drawing.Size(250, 23);
             this.btnSubEntradas.TabIndex = 8;
             this.btnSubEntradas.Text = "Entradas";
             this.btnSubEntradas.UseVisualStyleBackColor = false;
@@ -387,15 +391,16 @@ namespace AnchorSystem.Telas
             this.btnMenuCompras.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuCompras.FlatAppearance.BorderSize = 0;
             this.btnMenuCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnMenuCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnMenuCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuCompras.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnMenuCompras.ForeColor = System.Drawing.Color.White;
             this.btnMenuCompras.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuCompras.Image")));
             this.btnMenuCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuCompras.Location = new System.Drawing.Point(0, 346);
+            this.btnMenuCompras.Location = new System.Drawing.Point(0, 277);
             this.btnMenuCompras.Name = "btnMenuCompras";
-            this.btnMenuCompras.Size = new System.Drawing.Size(233, 45);
+            this.btnMenuCompras.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnMenuCompras.Size = new System.Drawing.Size(250, 45);
             this.btnMenuCompras.TabIndex = 10;
             this.btnMenuCompras.Text = "Compras";
             this.btnMenuCompras.UseVisualStyleBackColor = false;
@@ -406,14 +411,14 @@ namespace AnchorSystem.Telas
             this.pnlVendas.Controls.Add(this.btnSubClientes);
             this.pnlVendas.Controls.Add(this.btnSubVendas);
             this.pnlVendas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlVendas.Location = new System.Drawing.Point(0, 273);
+            this.pnlVendas.Location = new System.Drawing.Point(0, 204);
             this.pnlVendas.Name = "pnlVendas";
-            this.pnlVendas.Size = new System.Drawing.Size(233, 73);
+            this.pnlVendas.Size = new System.Drawing.Size(250, 73);
             this.pnlVendas.TabIndex = 9;
             // 
             // btnSubClientes
             // 
-            this.btnSubClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubClientes.FlatAppearance.BorderSize = 0;
@@ -422,7 +427,7 @@ namespace AnchorSystem.Telas
             this.btnSubClientes.ForeColor = System.Drawing.Color.White;
             this.btnSubClientes.Location = new System.Drawing.Point(0, 35);
             this.btnSubClientes.Name = "btnSubClientes";
-            this.btnSubClientes.Size = new System.Drawing.Size(233, 35);
+            this.btnSubClientes.Size = new System.Drawing.Size(250, 35);
             this.btnSubClientes.TabIndex = 9;
             this.btnSubClientes.Text = "Clientes";
             this.btnSubClientes.UseVisualStyleBackColor = false;
@@ -430,7 +435,7 @@ namespace AnchorSystem.Telas
             // 
             // btnSubVendas
             // 
-            this.btnSubVendas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubVendas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubVendas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubVendas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubVendas.FlatAppearance.BorderSize = 0;
@@ -439,7 +444,7 @@ namespace AnchorSystem.Telas
             this.btnSubVendas.ForeColor = System.Drawing.Color.White;
             this.btnSubVendas.Location = new System.Drawing.Point(0, 0);
             this.btnSubVendas.Name = "btnSubVendas";
-            this.btnSubVendas.Size = new System.Drawing.Size(233, 35);
+            this.btnSubVendas.Size = new System.Drawing.Size(250, 35);
             this.btnSubVendas.TabIndex = 8;
             this.btnSubVendas.Text = "Vendas";
             this.btnSubVendas.UseVisualStyleBackColor = false;
@@ -452,15 +457,16 @@ namespace AnchorSystem.Telas
             this.btnMenuVendas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuVendas.FlatAppearance.BorderSize = 0;
             this.btnMenuVendas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnMenuVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnMenuVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuVendas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnMenuVendas.ForeColor = System.Drawing.Color.White;
             this.btnMenuVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuVendas.Image")));
             this.btnMenuVendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuVendas.Location = new System.Drawing.Point(0, 228);
+            this.btnMenuVendas.Location = new System.Drawing.Point(0, 159);
             this.btnMenuVendas.Name = "btnMenuVendas";
-            this.btnMenuVendas.Size = new System.Drawing.Size(233, 45);
+            this.btnMenuVendas.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnMenuVendas.Size = new System.Drawing.Size(250, 45);
             this.btnMenuVendas.TabIndex = 8;
             this.btnMenuVendas.Text = "Vendas";
             this.btnMenuVendas.UseVisualStyleBackColor = false;
@@ -471,14 +477,14 @@ namespace AnchorSystem.Telas
             this.pnlProdutos.Controls.Add(this.btnSubCategorias);
             this.pnlProdutos.Controls.Add(this.btnSubProdutos);
             this.pnlProdutos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlProdutos.Location = new System.Drawing.Point(0, 157);
+            this.pnlProdutos.Location = new System.Drawing.Point(0, 88);
             this.pnlProdutos.Name = "pnlProdutos";
-            this.pnlProdutos.Size = new System.Drawing.Size(233, 71);
+            this.pnlProdutos.Size = new System.Drawing.Size(250, 71);
             this.pnlProdutos.TabIndex = 7;
             // 
             // btnSubCategorias
             // 
-            this.btnSubCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubCategorias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubCategorias.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubCategorias.FlatAppearance.BorderSize = 0;
@@ -487,7 +493,7 @@ namespace AnchorSystem.Telas
             this.btnSubCategorias.ForeColor = System.Drawing.Color.White;
             this.btnSubCategorias.Location = new System.Drawing.Point(0, 35);
             this.btnSubCategorias.Name = "btnSubCategorias";
-            this.btnSubCategorias.Size = new System.Drawing.Size(233, 35);
+            this.btnSubCategorias.Size = new System.Drawing.Size(250, 35);
             this.btnSubCategorias.TabIndex = 9;
             this.btnSubCategorias.Text = "Categorias";
             this.btnSubCategorias.UseVisualStyleBackColor = false;
@@ -495,7 +501,7 @@ namespace AnchorSystem.Telas
             // 
             // btnSubProdutos
             // 
-            this.btnSubProdutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.btnSubProdutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnSubProdutos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubProdutos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSubProdutos.FlatAppearance.BorderSize = 0;
@@ -504,7 +510,7 @@ namespace AnchorSystem.Telas
             this.btnSubProdutos.ForeColor = System.Drawing.Color.White;
             this.btnSubProdutos.Location = new System.Drawing.Point(0, 0);
             this.btnSubProdutos.Name = "btnSubProdutos";
-            this.btnSubProdutos.Size = new System.Drawing.Size(233, 35);
+            this.btnSubProdutos.Size = new System.Drawing.Size(250, 35);
             this.btnSubProdutos.TabIndex = 8;
             this.btnSubProdutos.Text = "Produtos";
             this.btnSubProdutos.UseVisualStyleBackColor = false;
@@ -517,15 +523,16 @@ namespace AnchorSystem.Telas
             this.btnMenuProdutos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuProdutos.FlatAppearance.BorderSize = 0;
             this.btnMenuProdutos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenuProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnMenuProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(57)))), ((int)(((byte)(19)))));
             this.btnMenuProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuProdutos.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnMenuProdutos.ForeColor = System.Drawing.Color.White;
             this.btnMenuProdutos.Image = ((System.Drawing.Image)(resources.GetObject("btnMenuProdutos.Image")));
             this.btnMenuProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuProdutos.Location = new System.Drawing.Point(0, 112);
+            this.btnMenuProdutos.Location = new System.Drawing.Point(0, 43);
             this.btnMenuProdutos.Name = "btnMenuProdutos";
-            this.btnMenuProdutos.Size = new System.Drawing.Size(233, 45);
+            this.btnMenuProdutos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnMenuProdutos.Size = new System.Drawing.Size(250, 45);
             this.btnMenuProdutos.TabIndex = 6;
             this.btnMenuProdutos.Text = "Produtos";
             this.btnMenuProdutos.UseVisualStyleBackColor = true;
@@ -533,14 +540,14 @@ namespace AnchorSystem.Telas
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(233, 112);
+            this.pictureBox2.Size = new System.Drawing.Size(250, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -557,9 +564,9 @@ namespace AnchorSystem.Telas
             this.btnExit.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(19, 7);
+            this.btnExit.Location = new System.Drawing.Point(3, 715);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(91, 83);
+            this.btnExit.Size = new System.Drawing.Size(70, 70);
             this.btnExit.TabIndex = 5;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -570,10 +577,11 @@ namespace AnchorSystem.Telas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Lucida Bright", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(245, 18);
+            this.lblHora.Font = new System.Drawing.Font("Lucida Bright", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.White;
+            this.lblHora.Location = new System.Drawing.Point(257, 190);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(130, 31);
+            this.lblHora.Size = new System.Drawing.Size(381, 91);
             this.lblHora.TabIndex = 0;
             this.lblHora.Text = "00:00:00";
             // 
@@ -583,24 +591,13 @@ namespace AnchorSystem.Telas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.AutoSize = true;
-            this.lblData.Font = new System.Drawing.Font("Lucida Bright", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(247, 53);
+            this.lblData.Font = new System.Drawing.Font("Lucida Bright", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.ForeColor = System.Drawing.Color.White;
+            this.lblData.Location = new System.Drawing.Point(260, 274);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(142, 21);
+            this.lblData.Size = new System.Drawing.Size(515, 77);
             this.lblData.TabIndex = 2;
             this.lblData.Text = "DD/MM/AAAA";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(154, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // timer1
             // 
@@ -610,9 +607,8 @@ namespace AnchorSystem.Telas
             // 
             // pnlBottom
             // 
-            this.pnlBottom.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlBottom.BackColor = System.Drawing.Color.Transparent;
             this.pnlBottom.Controls.Add(this.label4);
-            this.pnlBottom.Controls.Add(this.btnExit);
             this.pnlBottom.Controls.Add(this.label5);
             this.pnlBottom.Controls.Add(this.label6);
             this.pnlBottom.Controls.Add(this.label7);
@@ -622,9 +618,6 @@ namespace AnchorSystem.Telas
             this.pnlBottom.Controls.Add(this.label1);
             this.pnlBottom.Controls.Add(this.lblNome);
             this.pnlBottom.Controls.Add(this.pictureBox4);
-            this.pnlBottom.Controls.Add(this.pictureBox1);
-            this.pnlBottom.Controls.Add(this.lblHora);
-            this.pnlBottom.Controls.Add(this.lblData);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottom.Location = new System.Drawing.Point(250, 693);
             this.pnlBottom.Name = "pnlBottom";
@@ -635,7 +628,8 @@ namespace AnchorSystem.Telas
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label4.Location = new System.Drawing.Point(1006, 62);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(619, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 22);
             this.label4.TabIndex = 13;
@@ -645,7 +639,8 @@ namespace AnchorSystem.Telas
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label5.Location = new System.Drawing.Point(934, 62);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(536, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 22);
             this.label5.TabIndex = 12;
@@ -655,7 +650,8 @@ namespace AnchorSystem.Telas
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label6.Location = new System.Drawing.Point(1021, 26);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(634, 18);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 22);
             this.label6.TabIndex = 11;
@@ -665,7 +661,8 @@ namespace AnchorSystem.Telas
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label7.Location = new System.Drawing.Point(934, 27);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(536, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 22);
             this.label7.TabIndex = 10;
@@ -677,7 +674,7 @@ namespace AnchorSystem.Telas
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Location = new System.Drawing.Point(837, 6);
+            this.pictureBox5.Location = new System.Drawing.Point(434, 7);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(85, 85);
             this.pictureBox5.TabIndex = 9;
@@ -687,7 +684,8 @@ namespace AnchorSystem.Telas
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label3.Location = new System.Drawing.Point(610, 62);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(191, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 22);
             this.label3.TabIndex = 8;
@@ -697,7 +695,8 @@ namespace AnchorSystem.Telas
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label2.Location = new System.Drawing.Point(538, 62);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(119, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 22);
             this.label2.TabIndex = 7;
@@ -707,7 +706,8 @@ namespace AnchorSystem.Telas
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.label1.Location = new System.Drawing.Point(610, 27);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(191, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(185, 22);
             this.label1.TabIndex = 6;
@@ -717,7 +717,8 @@ namespace AnchorSystem.Telas
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
-            this.lblNome.Location = new System.Drawing.Point(538, 27);
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Location = new System.Drawing.Point(119, 22);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(66, 22);
             this.lblNome.TabIndex = 5;
@@ -729,7 +730,7 @@ namespace AnchorSystem.Telas
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(441, 6);
+            this.pictureBox4.Location = new System.Drawing.Point(19, 7);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(85, 85);
             this.pictureBox4.TabIndex = 4;
@@ -742,7 +743,7 @@ namespace AnchorSystem.Telas
             this.btnCtrlMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.btnCtrlMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCtrlMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnCtrlMenu.Image")));
-            this.btnCtrlMenu.Location = new System.Drawing.Point(6, 2);
+            this.btnCtrlMenu.Location = new System.Drawing.Point(3, 3);
             this.btnCtrlMenu.Name = "btnCtrlMenu";
             this.btnCtrlMenu.Size = new System.Drawing.Size(40, 40);
             this.btnCtrlMenu.TabIndex = 4;
@@ -751,24 +752,36 @@ namespace AnchorSystem.Telas
             // 
             // pnlSuperior
             // 
-            this.pnlSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.pnlSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(16)))), ((int)(((byte)(0)))));
+            this.pnlSuperior.Controls.Add(this.lblTitulo);
             this.pnlSuperior.Controls.Add(this.btnCtrlMenu);
             this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSuperior.Location = new System.Drawing.Point(250, 0);
             this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(1136, 45);
+            this.pnlSuperior.Size = new System.Drawing.Size(1136, 40);
             this.pnlSuperior.TabIndex = 2;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Lucida Bright", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(459, 5);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(92, 32);
+            this.lblTitulo.TabIndex = 5;
+            this.lblTitulo.Text = "Título";
             // 
             // pnlCentral
             // 
-            this.pnlCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.pnlCentral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlCentral.BackColor = System.Drawing.Color.Transparent;
+            this.pnlCentral.Controls.Add(this.lblHora);
+            this.pnlCentral.Controls.Add(this.lblData);
             this.pnlCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCentral.ForeColor = System.Drawing.Color.Transparent;
-            this.pnlCentral.Location = new System.Drawing.Point(250, 45);
+            this.pnlCentral.Location = new System.Drawing.Point(250, 40);
             this.pnlCentral.Name = "pnlCentral";
-            this.pnlCentral.Size = new System.Drawing.Size(1136, 648);
-            this.pnlCentral.TabIndex = 6;
+            this.pnlCentral.Size = new System.Drawing.Size(1136, 653);
+            this.pnlCentral.TabIndex = 7;
             // 
             // frmMenuPrincipal
             // 
@@ -799,12 +812,14 @@ namespace AnchorSystem.Telas
             this.pnlVendas.ResumeLayout(false);
             this.pnlProdutos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlBottom.ResumeLayout(false);
             this.pnlBottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlSuperior.ResumeLayout(false);
+            this.pnlSuperior.PerformLayout();
+            this.pnlCentral.ResumeLayout(false);
+            this.pnlCentral.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -813,7 +828,6 @@ namespace AnchorSystem.Telas
 
         private System.Windows.Forms.Panel pnlLateral;
         private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel pnlBottom;
@@ -847,7 +861,6 @@ namespace AnchorSystem.Telas
         private System.Windows.Forms.Button btnSubProdutos;
         private System.Windows.Forms.Button btnMenuProdutos;
         private System.Windows.Forms.Panel pnlVendas;
-        private System.Windows.Forms.Panel pnlCentral;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -858,5 +871,7 @@ namespace AnchorSystem.Telas
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Panel pnlCentral;
     }
 }

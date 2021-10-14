@@ -32,7 +32,9 @@ namespace AnchorSystem.Telas
             this.pnlClientes = new System.Windows.Forms.Panel();
             this.btnFechar = new System.Windows.Forms.Button();
             this.lblClientes = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnlClientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlClientes
@@ -72,12 +74,21 @@ namespace AnchorSystem.Telas
             this.lblClientes.TabIndex = 1;
             this.lblClientes.Text = "Clientes";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 91);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(640, 284);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1386, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnlClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmClientes";
@@ -85,6 +96,7 @@ namespace AnchorSystem.Telas
             this.Load += new System.EventHandler(this.frmClientes_Load);
             this.pnlClientes.ResumeLayout(false);
             this.pnlClientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -94,5 +106,6 @@ namespace AnchorSystem.Telas
         private System.Windows.Forms.Panel pnlClientes;
         private System.Windows.Forms.Label lblClientes;
         private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
